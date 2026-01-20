@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, Phone } from "lucide-react";
+import WeatherWidget from "./WeatherWidget";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,17 +19,19 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-center space-x-8">
               <Link href="/services" className="hover:text-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">Services</Link>
               <Link href="/about" className="hover:text-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">About</Link>
               <Link href="/contact" className="hover:text-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
+              <WeatherWidget />
               <Link href="tel:9063988809" className="bg-accent text-accent-foreground hover:bg-yellow-500 px-4 py-2 rounded-full font-bold transition-colors flex items-center gap-2">
                 <Phone size={16} />
                 (906) 398-8809
               </Link>
             </div>
           </div>
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 flex md:hidden items-center gap-4">
+             <div className="scale-90"><WeatherWidget /></div>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md hover:bg-secondary focus:outline-none"
