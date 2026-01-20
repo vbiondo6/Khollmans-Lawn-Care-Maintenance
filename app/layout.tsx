@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Khollman's Lawn Care Maintenance | Escanaba, MI",
-  description: "Professional lawn care services in Escanaba, Michigan. Mowing, trimming, spring/fall cleanup. Call (906) 398-8809 for a free quote.",
+  description: "Professional lawn care and snow removal services in Escanaba, Michigan. Mowing, plowing, spring/fall cleanup. Call (906) 398-8809 for a free quote.",
 };
 
 export default function RootLayout({

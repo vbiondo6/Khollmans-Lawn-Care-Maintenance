@@ -1,4 +1,4 @@
-import { Leaf, Scissors, Sun, Sparkles } from "lucide-react";
+import { Leaf, Scissors, Sun, Sparkles, Snowflake } from "lucide-react";
 
 const services = [
   {
@@ -10,6 +10,11 @@ const services = [
     title: "Trimming & Edging",
     description: "Precision trimming around trees, fences, and flower beds, plus crisp edging along driveways.",
     icon: Scissors,
+  },
+  {
+    title: "Snow Removal",
+    description: "Reliable plowing and shoveling services to keep your driveways and walkways clear all winter long.",
+    icon: Snowflake,
   },
   {
     title: "Spring & Fall Cleanup",
@@ -32,11 +37,11 @@ export default function Services() {
             Our Services
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-            Everything you need for a perfect lawn, all season long.
+            Professional care for your property, through every season.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-8 border border-gray-100">
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">

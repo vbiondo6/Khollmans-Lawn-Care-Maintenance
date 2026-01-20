@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services | Khollman's Lawn Care Maintenance",
-  description: "Comprehensive lawn care services including mowing, spring/fall cleanup, trimming, and edging.",
+  description: "Comprehensive lawn care and snow removal services including mowing, plowing, spring/fall cleanup, trimming, and edging.",
 };
 
 export default function ServicesPage() {

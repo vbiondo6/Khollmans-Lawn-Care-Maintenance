@@ -14,10 +14,14 @@ export default function Home() {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10">
             From weekly mowing to seasonal cleanups, we have the tools and experience to keep your property looking its best.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
              <div className="p-6 border rounded-xl hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold mb-2">Lawn Mowing</h3>
                 <p className="text-gray-600">Reliable weekly or bi-weekly service.</p>
+             </div>
+             <div className="p-6 border rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold mb-2">Snow Removal</h3>
+                <p className="text-gray-600">Plowing and shoveling for Escanaba winters.</p>
              </div>
              <div className="p-6 border rounded-xl hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold mb-2">Spring/Fall Cleanup</h3>

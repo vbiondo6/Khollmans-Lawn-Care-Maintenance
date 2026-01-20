@@ -86,6 +86,7 @@ export default function Contact() {
                 <label htmlFor="service" className="block text-sm font-medium text-gray-700">Service Needed</label>
                 <select id="service" name="service" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary py-3 px-4 bg-white">
                   <option>Lawn Mowing</option>
+                  <option>Snow Removal</option>
                   <option>Spring/Fall Cleanup</option>
                   <option>Trimming & Edging</option>
                   <option>General Maintenance</option>

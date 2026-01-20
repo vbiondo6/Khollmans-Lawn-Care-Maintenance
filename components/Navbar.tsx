@@ -14,7 +14,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="font-bold text-xl tracking-wider">
               KHOLLMAN'S
-              <span className="block text-xs font-normal text-gray-300">Lawn Care & Maintenance</span>
+              <span className="block text-xs font-normal text-gray-300">Lawn Care, Maintenance & Snow Removal</span>
             </Link>
           </div>
           <div className="hidden md:block">
