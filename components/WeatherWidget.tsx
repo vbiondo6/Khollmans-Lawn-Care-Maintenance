@@ -66,7 +66,7 @@ export default function WeatherWidget() {
     <div className="flex items-center gap-2 text-sm font-medium bg-primary/20 px-3 py-1 rounded-full border border-primary/10 backdrop-blur-sm">
       <Icon />
       <span>{weather.temp}°F</span>
-      <span className="hidden sm:inline text-xs opacity-75">| Escanaba, MI</span>
+      <span className="text-[10px] sm:text-xs opacity-75">| Escanaba, MI</span>
     </div>
   );
 }
