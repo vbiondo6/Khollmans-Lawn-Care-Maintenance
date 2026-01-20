@@ -115,6 +115,26 @@ export default function Contact() {
           </div>
 
         </div>
+
+        {/* Google Maps Section */}
+        <div className="mt-20">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Our Service Area</h3>
+          <div className="w-full h-[450px] rounded-2xl overflow-hidden shadow-md border border-gray-200">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44558.04632599708!2d-87.11299944685711!3d45.73351980313833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d4d673895e69123%3A0x8670150993952f9c!2sEscanaba%2C%20MI!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen={true} 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Khollman's Service Area"
+            ></iframe>
+          </div>
+          <p className="mt-4 text-center text-gray-500 italic">
+            Serving Escanaba, Gladstone, and the surrounding Delta County area.
+          </p>
+        </div>
       </div>
     </section>
   );
