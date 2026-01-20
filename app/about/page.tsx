@@ -23,7 +23,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Who We Are</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Khollman's Lawn Care Maintenance is a locally owned and operated business serving the Escanaba, Michigan area. 
-                We understand that your lawn is more than just grass—it's an extension of your home and a place for your family to enjoy.
+                We understand that your lawn is more than just grass - it's an extension of your home and a place for your family to enjoy.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Our mission is simple: to provide reliable, high-quality lawn care services that give you back your free time. 
