@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Facebook, Instagram, Youtube, Video } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
             <p className="text-sm text-gray-300 mt-1">Professional Lawn Care & Maintenance</p>
           </div>
           
-          <div className="flex space-x-6 text-sm text-gray-300">
+          <div className="flex space-x-6 text-sm text-gray-300 items-center">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <Link href="/services" className="hover:text-white transition-colors">Services</Link>
             <Link href="/about" className="hover:text-white transition-colors">About</Link>
@@ -18,6 +19,22 @@ export default function Footer() {
           </div>
         </div>
         
+        <div className="mt-8 flex justify-center space-x-8">
+            <a href="https://www.facebook.com/profile.php?id=61574874435348" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors" aria-label="Facebook">
+              <Facebook size={24} />
+            </a>
+            <a href="https://www.instagram.com/khollmanslawncaremaintenance/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors" aria-label="Instagram">
+              <Instagram size={24} />
+            </a>
+            <a href="https://www.youtube.com/@KhollmanLawnCareMaintenance" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors" aria-label="YouTube">
+              <Youtube size={24} />
+            </a>
+            <a href="https://www.tiktok.com/@khollman.lawn.car" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors" aria-label="TikTok">
+               {/* Using Video icon as a placeholder for TikTok if specific icon is missing, or just a generic social icon */}
+              <Video size={24} />
+            </a>
+        </div>
+
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-xs text-gray-400">
           <p>&copy; {new Date().getFullYear()} Khollman's Lawn Care Maintenance. All rights reserved.</p>
           <p className="mt-2">Serving Escanaba, MI and surrounding areas.</p>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Phone, MapPin, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Youtube, Video } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -57,12 +57,21 @@ export default function Contact() {
                   <Facebook className="h-6 w-6 text-accent" />
                 </div>
                 <div className="ml-3">
-                  <p className="text-base font-medium text-gray-900">Follow Us</p>
-                  <p className="mt-1 text-lg text-gray-600">
-                    <a href="https://www.facebook.com/p/Khollmans-Lawn-Care-Maintenance-61574874435348/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
-                      Khollman's Lawn Care on Facebook
-                    </a>
-                  </p>
+                  <p className="text-base font-medium text-gray-900">Social Media</p>
+                  <div className="mt-2 flex space-x-4">
+                     <a href="https://www.facebook.com/profile.php?id=61574874435348" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#1877F2] transition-colors" aria-label="Facebook">
+                        <Facebook size={24} />
+                     </a>
+                     <a href="https://www.instagram.com/khollmanslawncaremaintenance/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#E4405F] transition-colors" aria-label="Instagram">
+                        <Instagram size={24} />
+                     </a>
+                     <a href="https://www.youtube.com/@KhollmanLawnCareMaintenance" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FF0000] transition-colors" aria-label="YouTube">
+                        <Youtube size={24} />
+                     </a>
+                     <a href="https://www.tiktok.com/@khollman.lawn.car" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#000000] transition-colors" aria-label="TikTok">
+                        <Video size={24} />
+                     </a>
+                  </div>
                 </div>
               </div>
             </div>
