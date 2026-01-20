@@ -63,10 +63,12 @@ export default function WeatherWidget() {
   };
 
   return (
-    <div className="flex items-center gap-2 text-sm font-medium bg-primary/20 px-3 py-1 rounded-full border border-primary/10 backdrop-blur-sm">
-      <Icon />
-      <span>{weather.temp}°F</span>
-      <span className="text-[10px] sm:text-xs opacity-75">| Escanaba, MI</span>
+    <div className="flex items-center gap-2 text-sm font-medium bg-primary/20 px-3 py-1 rounded-full border border-primary/10 backdrop-blur-sm leading-none">
+      <div className="flex items-center"><Icon /></div>
+      <span className="flex items-center">{weather.temp}°F</span>
+      <span className="text-[10px] sm:text-xs opacity-75 flex items-center h-full pt-[1px]">
+        <span className="mx-1">|</span> Escanaba, MI
+      </span>
     </div>
   );
 }
